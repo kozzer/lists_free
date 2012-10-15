@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="2dip"  >
+
+    <!-- Item number - only visible if user enables them -->
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_number" 
+        style="@style/ItemNumberStyle" />
+   
+    <!-- Actual list item text -->
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_item" 
+        style="@style/ListItemStyle" />
+
+    <!-- Drag and drop grabber image -->
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_grabber" 
+        android:background="#0000" 
+        android:layout_width="28dip" 
+        android:layout_height="fill_parent" 
+        android:src="@drawable/dark_grabber" 
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dip"
+        android:contentDescription="@string/item_grabber_description" />
+
+</LinearLayout>

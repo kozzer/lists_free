@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text color the count of items for a list in the main screen -->
+    <attr name="itemCountColor" format="color" />
+    
+    <!-- Text color for list item numbering -->
+    <attr name="itemNumberColor" format="color" />
+
+    <!-- Text color for marked/unmarked list items -->
+    <declare-styleable name="childListItemColors">
+	    <attr name="markedItemColor" format="color" />
+	    <attr name="unmarkedItemColor" format="color" />
+    </declare-styleable>
+    
+    <!-- Color for the background of the title bar and bottom menu -->
+    <attr name="menuBackground" format="color" />
+    
+    <!-- Color for the fade, black for dark theme, white for light theme -->
+    <attr name="fadeColor" format="color" />
+    
+    <!-- Color of the divider between list items -->
+    <attr name="dividerColor" format="color" />
+    
+    <!-- Color for the background of context items -->
+    <attr name="contextBackground" format="color" />
+
+</resources>

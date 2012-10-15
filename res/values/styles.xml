@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ScreenTitleStyle" parent="@android:style/Widget.TextView">
+      	<item name="android:layout_width">fill_parent</item>
+      	<item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">20dip</item>
+      	<item name="android:paddingTop">5dip</item>
+      	<item name="android:paddingLeft">6dip</item>
+      	<item name="android:paddingRight">5dip</item>
+      	<item name="android:paddingBottom">6dip</item>
+		<item name="android:gravity">left|center</item>
+    </style>
+    
+    <style name="AppIconStyle">
+        <item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">fill_parent</item> 
+		<item name="android:paddingLeft">12dip</item>
+		<item name="android:src">@drawable/lists48</item>
+		<item name="android:contentDescription">@string/lists_app_description</item>
+    </style>
+    
+    <style name="TitleStyle" parent="@android:style/Widget.TextView">
+      	<item name="android:layout_width">match_parent</item>
+      	<item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24dip</item>
+      	<item name="android:paddingTop">5dip</item>
+      	<item name="android:paddingLeft">10dip</item>
+      	<item name="android:paddingRight">5dip</item>
+		<item name="android:gravity">left|center</item>
+    </style>
+    
+    <style name="ListViewStyle" parent="@android:style/Widget.ListView">
+      	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginBottom">96dip</item>
+        <item name="android:cacheColorHint">?fadeColor</item>
+	    <item name="android:requiresFadingEdge">vertical</item>
+	    <item name="android:fadingEdgeLength">15dip</item>
+	    <item name="android:divider">?dividerColor</item>
+	    <item name="android:dividerHeight">1dip</item>
+    </style>
+    
+    <style name="ItemCountStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:paddingTop">0dip</item>
+    	<item name="android:paddingBottom">7dip</item>    	
+    	<item name="android:paddingLeft">14dip</item>
+    	<item name="android:paddingRight">5dip</item>
+    	<item name="android:textSize">16dip</item>
+    	<item name="android:textColor">?itemCountColor</item>
+    	<item name="android:textStyle">italic</item>
+    </style>
+    
+    <style name="ListItemStyle" parent="@android:style/Widget.TextView">
+      	<item name="android:layout_width">wrap_content</item>
+      	<item name="android:layout_height">fill_parent</item>
+      	<item name="android:layout_weight">10</item>
+        <item name="android:textSize">20dip</item>
+      	<item name="android:paddingTop">5dip</item>
+      	<item name="android:paddingBottom">5dip</item>
+      	<item name="android:paddingLeft">10dip</item>
+      	<item name="android:paddingRight">5dip</item>
+		<item name="android:gravity">left|center</item>
+    </style>
+    
+    <style name="ItemNumberStyle" parent="@android:style/Widget.TextView">
+      	<item name="android:layout_width">38dip</item>
+      	<item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">20dip</item>
+      	<item name="android:paddingTop">5dip</item>
+      	<item name="android:paddingBottom">5dip</item>
+      	<item name="android:paddingLeft">10dip</item>
+      	<item name="android:paddingRight">5dip</item>
+		<item name="android:gravity">left|center</item>
+		<item name="android:textColor">?itemNumberColor</item>
+    </style>
+    
+    
+    <style name="MenuStyle" parent="@android:style/Widget">
+        <item name="android:background">?menuBackground</item>
+    </style> 
+    
+    <style name="ContextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:background">?contextBackground</item>
+    </style>
+    
+</resources>

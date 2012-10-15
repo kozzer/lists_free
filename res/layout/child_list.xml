@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    	<!-- H-layout to display application icon and list title -->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/child_title_layout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dip"
+		    android:orientation="horizontal"
+		    android:paddingBottom="2dip"
+		    android:paddingTop="4dip" 
+		    android:layout_alignParentTop="true"
+		    style="@style/MenuStyle" >
+    	
+    		<!-- App icon -->
+			<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/child_app_image"
+				style="@style/AppIconStyle" />
+				    		
+    		<!-- Child list title -->
+		    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		        android:id="@+id/child_title_text" 
+		        style="@style/ScreenTitleStyle" 
+		        android:layout_width="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_height="wrap_content" 
+		        android:layout_toRightOf="@id/child_app_image"
+		        android:paddingBottom="3dip"  />
+		    
+		    <!-- Voice Recognition button -->
+	   	    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+	   	        android:id="@+id/child_menu_voice"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="fill_parent"
+       	        android:layout_alignParentRight="true" 
+       	        android:paddingRight="8dip" 
+	   	        android:src="@drawable/dark_voice" 	
+	   	        android:contentDescription="@string/voice_description"
+	   	        android:hapticFeedbackEnabled="true" />
+		    
+    
+    	</RelativeLayout>
+    
+	    <!-- Green bar below app icon and title -->
+	    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:id="@+id/child_title_bar"
+	    	android:background="#00CC00" 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="2dp"
+	    	android:layout_below="@+id/child_title_layout" />
+ 
+		<!-- List items for child list -->
+	   	<com.kozzer.lists_free.DragAndDropListView 
+			android:id="@+id/child_list"
+	   		android:layout_below="@+id/child_title_bar"
+    		style="@style/ListViewStyle"  />   	
+	
+	   	<!-- Gray bar separating the listview from the menu below -->
+   		<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:id="@+id/child_menu_bar"
+	    	android:background="#666666" 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="1dip"
+	    	android:layout_above="@+id/child_menu"/>
+   	
+   		<!-- Layout holding the on-screen menu -->
+   		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	   	    android:id="@+id/child_menu"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="44dip"
+	   	    android:padding="4dip"
+	   	    android:layout_above="@+id/child_ad" 
+   	    	style="@style/MenuStyle" >
+			    
+	   	    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+	   	        android:id="@+id/child_menu_add"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="fill_parent"
+	   	        android:layout_weight="1"
+	   	        android:clickable="true"
+	   	        android:src="@drawable/dark_add_list"
+        		android:contentDescription="@string/add_new_item_description"
+   	        	android:hapticFeedbackEnabled="true" />
+	   	    
+	   	    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+	   	        android:id="@+id/child_menu_undo"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="fill_parent"
+	   	        android:layout_weight="1"
+	   	        android:clickable="true"
+	   	        android:src="@drawable/dark_undo"
+        		android:contentDescription="@string/more_undo"
+   	        	android:hapticFeedbackEnabled="true"  />
+	   	      	        	
+	   	    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+   	   	        android:id="@+id/child_menu_more"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="fill_parent"
+	   	        android:layout_weight="1"
+	   	        android:clickable="true"
+	   	        android:src="@drawable/dark_more"
+        		android:contentDescription="@string/push_marked_description"
+   	        	android:hapticFeedbackEnabled="true"  />
+	   	    
+		</LinearLayout>
+		
+		<com.google.ads.AdView
+	        xmlns:googleads="http://schemas.android.com/apk/lib/com.google.ads"
+	        android:id="@+id/child_ad"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dip"
+	        android:layout_alignParentBottom="true" 
+	        android:background="#666666"
+	        googleads:loadAdOnCreate="true" 
+	        googleads:adSize="BANNER"
+	        googleads:adUnitId="@string/admob_id" />
+   		    
+
+</RelativeLayout>

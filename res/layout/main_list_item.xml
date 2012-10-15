@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="2dip" >
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="10" >
+
+	    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/list_name" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        style="@style/TitleStyle" />
+	    
+	    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/item_count" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        style="@style/ItemCountStyle" /> 
+        
+    </LinearLayout>
+        
+    <!-- Drag and drop grabber image -->
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_grabber" 
+        android:background="#0000" 
+        android:layout_width="28dip" 
+        android:layout_height="fill_parent" 
+        android:src="@drawable/dark_grabber" 
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="7dip"
+        android:contentDescription="@string/item_grabber_description" />
+     
+
+</LinearLayout>

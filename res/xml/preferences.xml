@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<ListPreference
+	        android:title="Theme Selection"
+	        android:summary="You currently have the DARK theme active."
+	        android:key="themePref"
+	        android:entries="@array/themeArray"
+	        android:entryValues="@array/themeValues"
+	        android:defaultValue="dark" />
+	<CheckBoxPreference
+	        android:title="Display #s for list items"
+	        android:key="numberingPref"
+	        android:defaultValue="false" />
+	<EditTextPreference
+	        android:title="Backup Path"
+	        android:key="backupPathPref" />
+	<Preference
+	    	android:title="Backup"
+	    	android:summary="Back up your lists"
+	    	android:key="runBackupPref" />
+	<Preference
+	    	android:title="Restore"
+	    	android:summary="Restore lists from backup"
+	    	android:key="runRestorePref" />
+	<Preference
+	    	android:title="App Info"
+	    	android:summary="Display Lists! Information"
+	    	android:key="appInfoPref" />
+</PreferenceScreen>

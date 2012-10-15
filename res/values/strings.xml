@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lists! Free</string>
+    <string name="child_list">Child List</string>
+    <string name="add_list">New List</string>
+    <string name="backup">Backup/Restore</string>
+    <string name="about">More</string>
+    <string name="add_item">Add New Item</string>
+    <string name="unmark">Unmark Items</string>
+    <string name="clear_marked">Delete Marked</string>
+    <string name="about_description">© 2012 David Kozlowski \n\n Lists! Free for Android \n\n Version 1.1.01</string>
+    <string name="item_grabber_description">Touch here to drag</string>
+    <string name="lists_app_description">Lists! Free App Icon</string>
+    <string name="add_new_list_description">Add new list</string>
+    <string name="backup_lists_description">Back up lists</string>
+    <string name="restore_lists_description">Restore lists from backup</string>
+    <string name="preferences_descrption">Lists! Free preferences</string>
+    <string name="add_new_item_description">Add new list item</string>
+    <string name="sort_list_description">Sort list alphabetically</string>
+    <string name="push_marked_description">Push marked items to bottom</string>
+    <string name="clear_marked_description">Unmark all items</string>
+    <string name="delete_marked_description">Delete all marked items</string>
+    <string name="voice_description">Touch here to enter info using voice</string>
+    <string name="more_delete_all">Delete all items in this list</string>
+    <string name="more_delete_marked">Delete marked items only</string>
+    <string name="more_unmark_items">Unmark all items in this list</string>
+    <string name="more_undo">Undo last action</string>
+    <string name="admob_id">a14ffd990c66907</string> 
+</resources>

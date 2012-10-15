@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- VALUES FOLDER THEME FILE -->
+<resources>
+    
+    <style name="NoTitleLight" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">@color/text_light</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:itemBackground">@color/background_light</item>
+        <item name="itemCountColor">@color/color_item_count_light</item>
+        <item name="unmarkedItemColor">@color/text_light</item>
+        <item name="markedItemColor">@color/marked_light</item>
+        <item name="menuBackground">@color/menu_light</item>
+        <item name="itemNumberColor">@color/number_light</item>
+        <item name="fadeColor">@color/fade_light</item>
+        <item name="dividerColor">@color/divider_light</item>
+        <item name="contextBackground">@color/context_light</item>
+        </style> 
+    
+    <style name="NoTitleDark" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">@color/text_dark</item>        
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:itemBackground">@color/background_dark</item>
+        <item name="itemCountColor">@color/color_item_count_dark</item>
+        <item name="unmarkedItemColor">@color/text_dark</item>
+        <item name="markedItemColor">@color/marked_dark</item>
+        <item name="menuBackground">@color/menu_dark</item>
+        <item name="itemNumberColor">@color/number_dark</item> 
+        <item name="fadeColor">@color/fade_dark</item>
+        <item name="dividerColor">@color/divider_dark</item>
+        <item name="contextBackground">@color/context_dark</item>
+        </style>
+    
+    <!-- Background colors -->
+    <color name="background_light">#EDEDED</color>
+    <color name="background_dark">#000000</color>
+    
+    <!-- Default text color -->
+    <color name="text_light">#161616</color>
+    <color name="text_dark">#FAFAFA</color>
+    
+    <!-- Item count color on main list -->
+    <color name="color_item_count_light">#516171</color>
+    <color name="color_item_count_dark">#A1B1C1</color>
+    
+    <!-- Marked item color -->
+    <color name="marked_light">#AAAAAA</color>
+    <color name="marked_dark">#444444</color>
+    
+    <!-- Title Bar and Menu Colors -->
+    <color name="menu_light">#CBCBCB</color>
+    <color name="menu_dark">#000000</color>
+    
+    <!-- Item number color -->
+	<color name="number_light">#009900</color>
+	<color name="number_dark">#00CC00</color>
+	
+	<!-- Listview top/bottom fade color -->
+	<color name="fade_light">#EDEDED</color>
+	<color name="fade_dark">#000000</color>
+	
+	<!-- Listview item divider color -->
+	<color name="divider_light">#CCCCCC</color>
+	<color name="divider_dark">#333333</color>
+	
+	<!-- Context Menu item background color -->
+	<color name="context_light">#F4F4F4</color>
+	<color name="context_dark">#272727</color>
+	
+</resources>
